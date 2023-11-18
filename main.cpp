@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-#include "raylib.h"
+//#include "raylib.h"
 #include <fstream>
-#include "lib.h"
+//#include "lib.h"
 #define RESET   "\033[0m"
 #define BLACK1   "\033[30m"      /* Black */
 #define RED1    "\033[31m"      /* Red */
@@ -21,7 +21,7 @@
 #define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
 std::string  img;
 ///
-void game() {
+/*void game() {
     // Initialization
     //--------------------------------------------------------------------------------------
     const int screenWidth = 800;
@@ -60,9 +60,9 @@ Texture2D er = LoadTexture("tes.png");
 
     std::cout << "\033[2J\033[1;1H";
 }
-
+*/
 using namespace std;
-using namespace lib;
+//using namespace lib;
 bool isGui = false;
 
 int main() {
@@ -223,7 +223,7 @@ restart:
             {
                 cout <<"load a image\n";
                 cin>>img;
-              game();
+           //   game();
                 cout << "\033[2J\033[1;1H";
 
             }
@@ -240,10 +240,10 @@ restart:
                 isGui = true;
                 isGui=false;//temp code
                 cout<<"gui is not added yet\n";
-               if( IsKeyDown(KEY_ESCAPE))
-               {
-                   isGui = false;
-               }
+             //  if( IsKeyDown(KEY_ESCAPE))
+             //  {
+               //    isGui = false;
+            //   }
 
             } else if(input=="lua")
             {
